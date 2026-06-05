@@ -1,0 +1,62 @@
+/* Admin panel styling – glassmorphism, subtle gradients */
+body.light-theme {
+  background: var(--color-background-light);
+  color: var(--color-text-light);
+  font-family: 'Montserrat', sans-serif;
+}
+.admin-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.admin-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-pink);
+}
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+.login-input {
+  padding: 0.6rem 1rem;
+  width: 60%;
+  border: 1px solid var(--color-pink);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--color-text);
+}
+.login-button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: var(--color-pink);
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.login-button:hover { transform: scale(0.97); }
+.error-msg { color: #d32f2f; }
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+.log-table th, .log-table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  text-align: left;
+  color: var(--color-text);
+}
+.log-table th { background: rgba(255,255,255,0.1); }
+@media (max-width: 600px) {
+  .admin-container { margin: 40px 1rem; padding: 1rem; }
+  .login-input { width: 90%; }
+}

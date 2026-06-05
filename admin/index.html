@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel – Visitor Log</title>
+  <link rel="stylesheet" href="/admin/admin.css" />
+</head>
+<body class="light-theme">
+  <section class="admin-wrapper">
+    <div id="login-section" class="login-section">
+      <h2>Admin Login</h2>
+      <form id="login-form">
+        <input type="password" id="admin-pass" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p id="login-error" class="error" style="display:none;">Invalid password</p>
+    </div>
+    <div id="logs-section" class="logs-section" style="display:none;">
+      <h2>Visitor Log</h2>
+      <table id="logs-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Timestamp</th>
+            <th>IP</th>
+            <th>Device (User-Agent)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </section>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
